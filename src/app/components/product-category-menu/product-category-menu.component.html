@@ -4,19 +4,11 @@
 
       <li *ngFor="let tempProductCategory of productCategories">
 
-        <a routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active-link">
+        <a routerLink="/category/{{ tempProductCategory.id }}/{{ tempProductCategory.categoryName }}" routerLinkActive="active-link">
           {{ tempProductCategory.categoryName }}
         </a>
 
       </li>
-
-<!--      <li>-->
-<!--        <a routerLink="/category/1" routerLinkActive="active-link">Books</a>-->
-<!--      </li>-->
-<!--      <li>-->
-<!--        <a routerLink="/category/2" routerLinkActive="active-link">Coffee Mugs</a>-->
-<!--      </li>-->
-
 
     </ul>
   </nav>
