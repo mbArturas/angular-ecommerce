@@ -10,7 +10,7 @@ export class CartItem {
   constructor(product: Product) {
 
    // check on product.sku
-    this.id = product.sku;
+    this.id = product.id;
     this.name = product.name;
     this.imageUrl = product.imageUrl;
     this.unitPrice = product.unitPrice;
